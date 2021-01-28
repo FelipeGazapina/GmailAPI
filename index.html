@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Email Send</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="text-muted text-center my-4">
+            Contate-nos
+        </h1>
+        <form method="GET" action="/email" class="text-left my-4 text-muted">
+            <label for="nome">Seu nome</label>
+            <input class="form-control p-4" type="text" name="nome">
+
+            <label class="mt-2" for="email">Endereço de e-mail</label>
+            <input name="email" type="text" class="form-control p-4">
+
+            <label class="mt-2" for="envio">Endereço de envio</label>
+            <input name="envio" type="text" class="form-control p-4">
+
+            <label class="mt-2" for="mensagem">Mensagem</label>
+            <textarea class="form-control p-4" name="mensagem" id="" cols="30" rows="10"></textarea>
+            
+            <button class="btn btn-success mt-4 form-control">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
